@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">"CPUShedule "</string>
+    <string name="network_connection_lost">Op\'s network connection lost</string>
 </resources>

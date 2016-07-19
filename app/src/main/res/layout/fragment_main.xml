@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background_fragment_main_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+
+    <View
+        android:id="@+id/fragment_main_view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fragment_main_view_divider"
+        android:weightSum="1"
+        android:orientation="horizontal">
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="0.5"
+            android:id="@+id/main_fragment_professor_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            fancy:fb_borderColor="#32791f"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#32791f"
+            fancy:fb_focusColor="#afa6a6d9"
+            fancy:fb_radius="30dp"
+            fancy:fb_text="Professor"
+            fancy:fb_textColor="#FFFFFF" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:gravity="center"
+            android:layout_marginRight="16dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="-30dp"
+            android:id="@+id/main_fragment_student_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            fancy:fb_borderColor="#32791f"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#32791f"
+            fancy:fb_focusColor="#afa8a8c9"
+            fancy:fb_radius="30dp"
+            fancy:fb_text="Student"
+            fancy:fb_textColor="#FFFFFF" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
